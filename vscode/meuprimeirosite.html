@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curso do ranpi</title>
+</head>
+<body>
+    <form action="www.destino.com" method="post">
+        <h1>Curso POO</h1>
+        <br><br>
+
+        <h2> introdução </h2>
+        <p>A programação orientada a objetos (POO) é um paradigma que organiza o desenvolvimento de software em torno de objetos, que são instâncias de classes. Esse paradigma é amplamente adotado devido à sua capacidade de facilitar a modelagem de sistemas complexos e a manutenção do código. No cerne da POO, estão quatro pilares fundamentais que sustentam a sua estrutura e fornecem uma base sólida para a criação de aplicações robustas, flexíveis e reutilizáveis. Esses pilares estabelecem as diretrizes para o design de software e ajudam a garantir que o código seja bem estruturado e fácil de entender, adaptando-se às mudanças ao longo do tempo.</p>
+        <p> uma das aulas que foram utilizada para a criação deste site: <a href="https://www.youtube.com/watch?v=YM0Tne-GoI4">AULA</a></p>
+
+        <h2>Abstração </h2>
+        <p>Abstrair algo significa esconder os detalhes da implementação dentro de algo – às vezes um protótipo, às vezes em uma função. Portanto, quando você chama a função, não precisa entender exatamente o que ela está fazendo. 
+            Um exemplo claro do conceito de abstração seria o funcionamento de um carro. Quando acionamos ele para ligar, não precisamos saber quais passos ele faz para colocar o motor em funcionamento. Quando acionamos o freio, não precisamos saber todos os mecanismos que são acionados para fazer o carro frear. Apenas sabemos o que cada objeto ou função do carro produz como resultado.
+            Voltando para a codificação, se você tivesse que entender cada função em uma base de código grande, você nunca codificaria nada, pois, levaria meses para terminar de ler e entender a lógica de tudo isso.
+     </p>
+    <img src="imagens/abs.png" alt="É uma forma de reduzir a complexidade e tornar o projeto e a implementação mais eficientes em sistemas complexos de software.">
+    <h2>Exemplo de um objeto que possui abstração</h2>
+    <p>Ter um botão escrito "Fazer café"</p>
+
+    <h2>Exemplo de um objeto sem abstração</h2>
+    <p>Ter um botão escrito "Adicionar água fria à chaleira"</p>
+    <p>Ter um botão escrito "Ferver a água"</p>
+    <p>Ter um botão escrito "Adicionar uma cápsula de café"</p>
+    <p>Ter um botão escrito "Passar a água pela cápsula de café"</p>
+    <p>Além de vários outros botões para completar o processo</p>
+
+    <h2>Herança</h2>
+    <p>A herança permite que um objeto adquira as propriedades e métodos de outro objeto. Em JavaScript, isso é feito por Prototypal Inheritance (ou herança prototípica, em português).</p>
+    <p>A reutilização é o principal benefício aqui. Sabemos que às vezes a mesma coisa precisa ser feita em vários lugares e sempre de forma igual, exceto em alguma pequena parte. Esse é um problema que a herança pode resolver.</p>
+    <p>Sempre que usamos herança, tentamos fazer com que o pai e o filho tenham alta coesão. Coesão é o quanto seu código está relacionado. Por exemplo, o tipo Passaro consegue ser estendido do tipo MotorADiesel? Não, certo?</p>
+    <p>Por isso, mantenha sua herança simples de entender e previsível. Não faça heranças completamente não relacionadas somente porque há um método ou uma propriedade de que você precisa. A herança não resolve bem esse problema específico.</p>
+    <p>Ao usar herança, ela precisa ter a maior parte das funcionalidades (você nem sempre precisa ter absolutamente tudo).</p>
+    <p>Nós, desenvolvedores, temos um princípio chamado de princípio de substituição de Liskov. Ele afirma que, se conseguimos usar uma classe pai (vamos chamá-la de TipoPai) em qualquer lugar em que usamos uma classe filho (vamos chamá-la de TipoFilho) – e se TipoFilho é uma herança de TipoPai, então passamos no teste.</p>
+    <p>A principal razão pela qual se falha nesse teste é se TipoFilho estiver removendo coisas do pai. Se TipoFilho remove métodos herdados do pai, isso gera diversos TypeError, onde haverá coisas que estarão indefinidas e que estamos esperando que não sejam.</p>
+     <img src="imagens/zzz1.png" alt="">
+
+     <h2> Encapsulamento </h2>
+     <p>A definição de encapsulamento é "a ação de colocar algo dentro ou como se estivesse em uma cápsula". Remover o acesso a partes do seu código e tornar as coisas privadas é exatamente o que o Encapsulamento faz (muitas vezes, as pessoas se referem a ele como "ocultação de dados").
+        Encapsulamento significa que o código de cada objeto deve controlar apenas seu próprio estado.  Se você não sabe o que é o estado de um objeto, vamos fazer a seguinte analogia:</p>
+    <p>Sabe aquele retrato de família, em que você era bebê ainda? Ele é um registro do estado "instantâneo" em que você estava naquele exato momento. De lá pra cá muita coisa mudou, e se hoje você tirar uma nova foto, seu estado já não é o mesmo que aquele. Aquilo que você fez durante o tempo com sua vida, transformou você. A mesma coisa ocorre com o objeto.</p>
+    <p>O estado é o "instantâneo" atual do objeto. Todas as chaves e métodos (funções) de um objeto são suas propriedades. Se você redefinir ou excluir uma chave, por exemplo, estará alterando o seu estado.</p>
+    <p>Por isso, é importante limitar o acesso de quais partes do código podem ser acessadas. Caso não sejam necessárias, torne as coisas mais inacessíveis para não possibilitar efeitos colaterais no estado do objeto.</p>
+    <img src="imagens/zkzk.png" alt=""> 
+
+    <h2>Polimorfismo</h2>    
+    <p>O polimorfismo costuma ser chamado de o terceiro pilar da programação orientada a objetos, depois do encapsulamento e a herança. O polimorfismo é uma palavra grega que significa "de muitas formas" e tem dois aspectos distintos:</p>
+    <p>•	Em tempo de execução, os objetos de uma classe derivada podem ser tratados como objetos de uma classe base, em locais como parâmetros de método, coleções e matrizes. Quando esse polimorfismo ocorre, o tipo declarado do objeto não é mais idêntico ao seu tipo de tempo de runtime.</p>
+    <p>•	Classes de base podem definir e implementar métodos virtuais, e classes derivadas podem substituí-los, o que significa que fornecem sua própria definição e implementação. Em tempo de execução, quando o código do cliente chama o método, o CLR procura o tipo de tempo de execução do objeto e invoca a substituição do método virtual. No código-fonte, você pode chamar um método em uma classe base e fazer com que a versão de uma classe derivada do método seja executada.</p>
+    <p>Os métodos virtuais permitem que você trabalhe com grupos de objetos relacionados de maneira uniforme. Por exemplo, suponha que você tem um aplicativo de desenho que permite que um usuário crie vários tipos de formas sobre uma superfície de desenho. Você não sabe no tempo de compilação quais tipos específicos de formas o usuário criará. No entanto, o aplicativo precisa manter controle de todos os diferentes tipos de formas que são criados e atualizá-los em resposta às ações do mouse do usuário. Você pode usar o polimorfismo para resolver esse problema em duas etapas básicas:</p>
+    <p>1.	Crie uma hierarquia de classes em que cada classe de forma específica derive de uma classe base comum.</p>
+    <p>2.	Use um método virtual para invocar o método adequado em qualquer classe derivada por meio de uma única chamada para o método da classe base.</p>
+    <img src="imagens/pikririr.png" alt="">
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2> fontes </h2>
+    <p>confira estes sites que foram utilizado para a criação deste site</p><a>https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Inheritance_and_the_prototype_chain</a>
+    <a>https://www.youtube.com/watch?v=YM0Tne-GoI4</a>
+    <a>https://www.alura.com.br/artigos/poo-programacao-orientada-a-objetos?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=164240702375&hsa_ad=703935132410&hsa_src=g&hsa_tgt=dsa-2276348409543&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMI1JTS8cbvhwMVtUFIAB0liTdUEAAYASAAEgJLP_D_BwE</a>
+    <br>
+    <p>confira a seguir o link das imagens utilizadas </p>
+    <a>https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freecodecamp.org%2Fportuguese%2Fnews%2Fo-que-e-abstracao-em-programacao-e-por-que-ela-e-util%2F&psig=AOvVaw0iDU0Mn9zNDQn4v9131ba6&ust=1723555796382000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCIja2vDH74cDFQAAAAAdAAAAABAE</a>
+    <a>https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.grancursosonline.com.br%2Fpoo-principal-conceito-de-polimorfismo%2F&psig=AOvVaw1MvP_RMwmJ8ojbKLok3gar&ust=1723555913979000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCOCopanI74cDFQAAAAAdAAAAABAE</a>
+    <a>https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alura.com.br%2Fartigos%2Fo-que-e-encapsulamento&psig=AOvVaw0t7N0RmHSg2a57dj3c7qqZ&ust=1723555946000000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCPjGkrnI74cDFQAAAAAdAAAAABAE</a>
+    <a>https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.grancursosonline.com.br%2Fheranca-na-programacao-orientada-a-objetos%2F&psig=AOvVaw2LnHzmID8iZgeDrj9VAFqN&ust=1723555979353000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCMC148fI74cDFQAAAAAdAAAAABAE</a>
+
+</body>
+</html>
